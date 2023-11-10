@@ -38,13 +38,13 @@
 
 
 <div class="container">
-    <h2 style="color: black; text-align: center; margin-top: 30px; "><a href="@Url.Action("Index","Category")" class=""><b style="color: black;">DANH MỤC</b></a></h2>
+    <h2 style="text-align: center; color: black; margin-top: 30px; "><a href="@Url.Action("Index","Category")" class=""><b>DANH MỤC</b></a></h2>
     <ul class="menu cf">
         @foreach (var item in Model.ListCategory)
         {
-        <li>
-            @Html.ActionLink(item.Name, "ProductCategory", "Category", new { @Id = item.Id }, null)
-        </li>
+            <li>
+                @Html.ActionLink(item.Name, "ProductCategory", "Category", new { @Id = item.Id }, null)
+            </li>
         }
     </ul>
 
@@ -114,7 +114,7 @@
             <div class="col-md-3">
 
                 <div class="home-category-banner bg-light-orange">
-                    
+
                     <a href="#" class="btn btn-outline-primary rounded-pill">Source now</a>
                 </div>
 
@@ -131,7 +131,7 @@
                                     <a href="@Url.Action("Detail", "Product", new { Id = item.Id })" class="img-wrap">
                                         <img class="img-sm float-right" src="~/Content/images/items/@item.Avartar">
                                     </a>
-                                    <p class="text-muted"><i class="fa fa-map-marker-alt"></i>@item.Name</p>
+                                    <a href="@Url.Action("Detail", "Product", new { Id = item.Id })" class="text-muted"><i class="fa fa-map-marker-alt"></i>@item.Name</a>
                                     <div class="price mt-1">@item.Price  <span class="badge badge-danger"> VND </span></div>
                                 </div>
                             </a>
@@ -170,7 +170,7 @@
                                     <a href="@Url.Action("Detail", "Product", new { Id = item.Id })" class="img-wrap">
                                         <img class="img-sm float-right" src="~/Content/images/items/@item.Avartar">
                                     </a>
-                                    <p class="text-muted"><i class="fa fa-map-marker-alt"></i>@item.Name</p>
+                                    <a href="@Url.Action("Detail", "Product", new { Id = item.Id })" class="text-muted"><i class="fa fa-map-marker-alt"></i>@item.Name</a>
                                     <div class="price mt-1">@item.Price  <span class="badge badge-danger"> VND </span></div>
 
 
@@ -184,7 +184,7 @@
                 </ul>
             </div> <!-- col.// -->
         </div> <!-- row.// -->
-        </div> <!-- card.// -->
+    </div> <!-- card.// -->
 </section>
 <section class="padding-bottom">
     <header class="section-heading heading-line">
@@ -213,7 +213,7 @@
                                     <a href="@Url.Action("Detail", "Product", new { Id = item.Id })" class="img-wrap">
                                         <img class="img-sm float-right" src="~/Content/images/items/@item.Avartar">
                                     </a>
-                                    <p class="text-muted"><i class="fa fa-map-marker-alt"></i>@item.Name</p>
+                                    <a href="@Url.Action("Detail", "Product", new { Id = item.Id })" class="text-muted"><i class="fa fa-map-marker-alt"></i>@item.Name</a>
                                     <div class="price mt-1">@item.Price  <span class="badge badge-danger"> VND </span></div>
                                 </div>
                             </a>
@@ -237,9 +237,9 @@
         {
             <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                 <div href="#" class="card card-sm card-product-grid">
-                    <a href="#" class="img-wrap"> <img src="~/Content/images/items/@item.Avartar"> </a>
+                    <a href="@Url.Action("Detail", "Product", new { Id = item.Id })" class="img-wrap"> <img src="~/Content/images/items/@item.Avartar"> </a>
                     <figcaption class="info-wrap">
-                        <a href="#" class="title">@item.Name</a>
+                        <a href="@Url.Action("Detail", "Product", new { Id = item.Id })" class="title">@item.Name</a>
                         <div class="price mt-1">@item.Price  <span class="badge badge-danger"> VND </span></div> <!-- price-wrap.// -->
                     </figcaption>
                 </div>
