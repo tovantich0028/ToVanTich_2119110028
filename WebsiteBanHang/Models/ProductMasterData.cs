@@ -33,6 +33,7 @@ namespace WebsiteBanHang.Models
         [Required(ErrorMessage = "Vui lòng nhập loại sản phẩm!")]
         [Display(Name = "Loại sản phẩm")]
         public Nullable<int> Typeld { get; set; }
+        [Display(Name = "Tên")]
         public string Sulg { get; set; }
         [Required(ErrorMessage = "Vui lòng nhập thương hiệu!")]
         [Display(Name = "Thương hiệu")]

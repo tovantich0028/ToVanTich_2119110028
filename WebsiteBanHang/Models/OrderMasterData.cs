@@ -15,6 +15,7 @@ namespace WebsiteBanHang.Models
         public Nullable<int> UserId { get; set; }
         [Display(Name = "Trạng thái")]
         public Nullable<int> Status { get; set; }
+        [Display(Name = "Ngày Tạo")]
         public Nullable<System.DateTime> CreatedOnUtc { get; set; }
     }
 }

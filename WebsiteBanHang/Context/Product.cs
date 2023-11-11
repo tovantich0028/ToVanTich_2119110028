@@ -25,7 +25,7 @@ namespace WebsiteBanHang.Context
         public Nullable<int> Typeld { get; set; }
         public string Sulg { get; set; }
         public Nullable<int> BrandId { get; set; }
-        public Nullable<bool> Deleted { get; set; }
+        public Nullable<bool> DeleteId { get; set; }
         public Nullable<bool> ShowOnHomePage { get; set; }
         public Nullable<int> DisplayOrder { get; set; }
         public Nullable<System.DateTime> CreatedOnUtc { get; set; }
