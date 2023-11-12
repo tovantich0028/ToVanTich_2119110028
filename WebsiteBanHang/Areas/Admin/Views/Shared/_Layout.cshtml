@@ -31,7 +31,7 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="~/Content/admin/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+            <img href="@Url.Action("Index","Home")" class="animation__shake" src="~/Content/admin/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
         </div>
 
         <!-- Navbar -->
@@ -44,9 +44,7 @@
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="@Url.Action("Index","Home")" class="nav-link">Trang chủ</a>
                 </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="@Url.Action("Index","Product")" class="nav-link">Về danh sách</a>
-                </li>
+              
             </ul>
 
             <!-- Right navbar links -->
@@ -94,7 +92,7 @@
                         <img src="~/Content/admin/dist/img/AdminLTELogo.png" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">ADMIN</a>
+                        <a href="@Url.Action("Index","Home")" class="d-block">ADMIN</a>
                     </div>
                 </div>
 
@@ -118,32 +116,38 @@
                         <li class="nav-item menu-open">
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="@Url.Action("Index","Product")" class="nav-link active">
-                                        <i class="far fa-circle nav-icon"></i>
+                                    <a href="@Url.Action("Index","Home")" class="nav-link active">
+                                        
+                                        <p>TRANG QUẢN TRỊ</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("Index","Product")" class="nav-link">
+                                        
                                         <p>Quản lý sản phẩm</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="@Url.Action("Index","Category")" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
+                                      
                                         <p>Quản lý danh mục</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="@Url.Action("Index","Order")" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
+                                      
                                         <p>Quản lý đơn hàng</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="@Url.Action("Index","Brand")" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
+                                       
                                         <p>Quản lý thương hiệu</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="@Url.Action("Index","Users")" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
+                                       
                                         <p>Quản lý người dùng</p>
                                     </a>
                                 </li>
